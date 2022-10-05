@@ -6,6 +6,8 @@
       "dom.iterable",
       "esnext"
     ],
+    "jsx": "react-jsx",
+    "jsxImportSource": "@emotion/react",
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,

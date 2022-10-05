@@ -1,25 +1,24 @@
+import styled from '@emotion/styled';
+import { breakPoints as bp } from './styles/breakPoints';
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Main  from './components/Main';
 
+
+const Container = styled.div `
+  ${bp.desktop} {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+`
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <Main />
+    </Container>
   );
 }
 
